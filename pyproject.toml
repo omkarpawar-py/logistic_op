@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "logistics-op"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "logistics_op", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.111.1"
+uvicorn = "^0.30.1"
+sqlalchemy = "^2.0.31"
+psycopg2-binary = "^2.9.9"
+requests = "^2.32.3"
+numpy = "^2.0.0"
+ortools = "^9.10.4067"
+pytest = "^8.3.2"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
